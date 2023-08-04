@@ -5,6 +5,30 @@
   <title>CSS Positioning Exercise</title>
   <style>
     /* Write your code here */
+
+    .blue-box {
+      position: relative;
+      top: 200px;
+      left: 200px;
+      
+      background-color: blue;
+      width: 500px;
+      height: 300px;
+
+    }
+
+    .red-circle {
+      position: absolute;
+      top: 150px;
+      left: 250px;
+
+      background-color: red;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      z-index: 1;
+
+    }
   </style>
 </head>
 
@@ -17,3 +41,15 @@
 </body>
 
 </html>
+
+<!-- 
+
+  Positioning Type
+  - Static -> Default Position
+  - Relative -> Position relative to default position
+  - Absolute -> Position relative to nearest positioned ancestor/top left corner of webpage
+    - z-index: determines which elements are on top of each other (high val -> sits on top)
+  - Fixed -> Position relative to top left corner of browser window
+  - position different from margin. Margin applied based on position
+
+ -->
