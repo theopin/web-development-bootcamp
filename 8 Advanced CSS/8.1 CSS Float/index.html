@@ -19,17 +19,23 @@
       font-size: 2em;
     }
 
+    .img {
+      float: left;
+    }
     .cat {
       background-color: aquamarine;
+      float: left;
     }
 
     .dog {
       background-color: coral;
+      float: right;
     }
 
     footer {
       text-align: center;
       background-color: blueviolet;
+      clear: both;
     }
   </style>
 </head>
@@ -60,3 +66,10 @@
 </body>
 
 </html>
+
+<!-- 
+
+  - float: allows text to take up unused portion of other elements
+  - clear: removes responsibility of element to respond to floated element (left/right/both)
+  - float best used for text wrapping
+-->
