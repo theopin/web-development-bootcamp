@@ -13,7 +13,8 @@
     .container {
       color: white;
       border: 5px solid gold;
-      display: flex;
+      display: inline-flex;
+      flex-direction: column;
     }
 
     /*
@@ -51,28 +52,13 @@ children of the .container class.
 </html>
 
 <!--
-  order (set on child): sets whether element should be placed at end (based on given value)
-  flex-wrap: (set on container)
-    - nowrap: items will be pushed to end
-    - wrap: items will maintain min width, being pushed to next line if necessary
-    - wrap-reverse: same as above but reversed
-  justify-content: (set on container)
-    -  elements flush towards given side
-    - flex-start
-    - flex-end
-    - center
-    - space-between/around
+  flex-direction: row (default - how elements are stacked after the other)
+    - determines axis on how elements are stacked
+    - main axis: axis used to stack elements
+    - cross axis :opposite axis of main axis
 
-  align-items
-    - requres height to be set
-    - only works if flex-wrap: nowrap
-    - flushes elements based on cross-axis
+  flex-basis: 100px (sets length of elements based on main axis)
 
-  align-self (set on child)
-    - sets item independently based on cross-axis
 
-  align-content
-    - requres height to be set
-    - only works if flex-wrap: wrap
 
  -->

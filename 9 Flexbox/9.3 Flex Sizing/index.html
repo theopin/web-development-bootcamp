@@ -22,7 +22,8 @@ children of the .container class.
     */
 
     .container > div {
-      flex-basis: 100px;
+      flex-basis: 10px;
+      min-width: 50px;
     }
 
     .red {background-color: #eb4d4b;}
@@ -51,28 +52,12 @@ children of the .container class.
 </html>
 
 <!--
-  order (set on child): sets whether element should be placed at end (based on given value)
-  flex-wrap: (set on container)
-    - nowrap: items will be pushed to end
-    - wrap: items will maintain min width, being pushed to next line if necessary
-    - wrap-reverse: same as above but reversed
-  justify-content: (set on container)
-    -  elements flush towards given side
-    - flex-start
-    - flex-end
-    - center
-    - space-between/around
-
-  align-items
-    - requres height to be set
-    - only works if flex-wrap: nowrap
-    - flushes elements based on cross-axis
-
-  align-self (set on child)
-    - sets item independently based on cross-axis
-
-  align-content
-    - requres height to be set
-    - only works if flex-wrap: wrap
-
- -->
+  sizing priority:
+    - content-width < width < flex-basis < min-width/max-width
+    - flex-grow (starts at initial flex-basis) increases width as page-width increases
+    - flex-shrink (shrinks to fit min-width)
+    - flex-basis being auto (based on text)
+    - flex: grow shrink basis
+    - flex: 1 (grow 1 shrink 1 basis 0)
+ 
+  -->
