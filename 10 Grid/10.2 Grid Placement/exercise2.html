@@ -38,7 +38,7 @@
     .astronaut {
       background-color: #03989E;
       order: 1;
-
+      grid-column: span 2;
       /* TODO: Make the astronaut box look like the goal2 image. */
 
     }
@@ -54,3 +54,11 @@
 </body>
 
 </html>
+
+<!-- 
+  grid column: grid-column-start and grid-column-end
+  grid column start/end - can specify 1 to stretch at lhs and -1 at rhs
+  order: set grid div after others with lower order
+
+  grid-area: set grid div based on order
+ -->
