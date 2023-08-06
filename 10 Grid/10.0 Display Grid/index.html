@@ -7,6 +7,26 @@
     /* Write your code here */
     /* Each square should be 100px by 100px */
     /* My colours for white: #f0d9b5, black: #b58863 */
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+      width: 800px;
+    }
+
+    .white {
+      height: 100px;
+      width: 100px;
+      color: #f0d9b5;
+    }
+
+    .black {
+      height: 100px;
+      width: 100px;
+      background-color: #b58863;
+    }
+
   </style>
 </head>
 
@@ -80,3 +100,11 @@
 </body>
 
 </html>
+
+
+<!-- 
+  display: grid;
+  grid-template-columns: 1fr 2fr; (1: 2) // columns with width ratio
+  grid-template-rows: 1fr 1fr; (1:1)    // rows with height ratio
+  gap: 10px;
+ -->
