@@ -1,0 +1,39 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+
+/* Write your CSS below, don't change the rules above. */
+
+p {
+  color:red
+}
+
+.note {
+  font-size: 20px;
+}
+
+#id-selector-demo{
+  color: green;
+}
+
+li[value="4"] {
+  color: blue;
+}
+
+* {
+  text-align: center;
+}
+
+/* 
+
+- color: changes text color
+- background-color: changes background color
+- colors can be named 
+- use color palettes (set of colors that blend with each other
+- eg. colorhunt.co
+- colors mixed with different levels of red, green, blue
+- hexcode can be used instead of named color
+
+*/

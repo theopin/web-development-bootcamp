@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Cascade</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="outer-box" class="box">
+    <div class="box">
+      <p>Yellow Text</p>
+      <div class="box inner-box">
+        <p class="white-text">White Text</p>
+      </div>
+    </div>
+    <div class="box">
+      <p>Yellow Text</p>
+      <div class="box inner-box">
+        <p class="white-text">White Text</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<!-- 
+
+  Levels:
+
+  4) Position: The value set lower down (towards end) is the value set for an attribute
+  3) Specificity: li {} <  .class-name {} < li[attribute_check] < #id (more priority to set)
+  2) Type: external < internal < inline (more priority to set
+  1) Key word (attr: value !important) Overrides any other specification of value for attribute
+
+ -->
