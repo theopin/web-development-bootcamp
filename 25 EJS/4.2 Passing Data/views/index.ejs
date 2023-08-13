@@ -7,8 +7,15 @@
   <title>Name Letters</title>
 </head>
 
+
+
 <body>
   <!-- Write your code here -->
+  <% if (locals.characters) { %>
+    <h1>
+      Your name has <%=characters%> characters.
+      </h1>
+  <%} %>
   <form action="/submit" method="POST">
     <input type="text" name="fName" placeholder="First name">
     <input type="text" name="lName" placeholder="Last name">

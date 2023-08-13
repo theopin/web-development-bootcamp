@@ -15,3 +15,15 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+/*
+
+
+<%= variable %>
+<% console.log("Hello") %> (output not rendered in tag)
+
+<%- <h1>Hello </h1> %> shows html
+<%% %%> allows escape chars (ie. <% or %>)
+
+<%# comments %>
+<%- include("<FILE NAME>") %> include particular ejs file
+*/
