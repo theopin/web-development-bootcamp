@@ -59,8 +59,6 @@ async function postAllArticles(req, res) {
 
   } catch (error) {
     res.status(500).json({ error: "Could not create the article" });
-    const savedArticle = await newArticle.save();
-    res.status(201).json(savedArticle);
   }
 
 }
