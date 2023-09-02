@@ -2,14 +2,14 @@ import React from "react";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Note from "./components/Note";
-
+import NoteManager from "./components/NoteManager";
+import notes from "./notes";
 import "./styles.css";
 
 function App() {
     return <div>
         <Header />
-        <Note />
+        <NoteManager notes={notes}/>
         <Footer/>
     </div>;
 }
