@@ -4,9 +4,9 @@ import Nat8 "mo:base/Nat8";
 
 actor class Nft(name: Text, owner: Principal, content: [Nat8]) = this {
   
-    let imageBytes = content;
-    let itemName = name;
-    let nftOwner = owner;
+    private let imageBytes = content;
+    private let itemName = name;
+    private var nftOwner = owner;
 
 
     public query func getName() :async Text {
@@ -26,4 +26,13 @@ actor class Nft(name: Text, owner: Principal, content: [Nat8]) = this {
     public query func getCanisterId() :async Principal {
         return Principal.fromActor(this);
     };
+
+    public shared(msg) func transferOwnership(newOwner: Principal): async Text {
+        if(msg.caller == nftOwner) {
+            nftOwner := newOwner;
+            return "Success";
+        } else {
+            return "Failure"
+        }
+    }
 };
